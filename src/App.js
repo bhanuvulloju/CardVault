@@ -1,23 +1,42 @@
-import logo from './logo.svg';
+
 import './App.css';
+import Navbar from './Components/Navbar';
+import Home from './Components/Home';
+import Credit from './Components/Credit';
+import Debit from './Components/Debit';
+import Form from './Components/Form';
+import Contact from './Components/Contact';
+import { useState } from 'react';
+
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route,
+ 
+} from "react-router-dom";
 
 function App() {
+  const [obj, setObj] = useState({name:'',cvv:'',exp:'',card:''})
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Router>
+        <Navbar/>
+        <Routes>
+          <Route exact path="/" element={<Home />}/>
+          <Route exact path="/credit" element={<Credit obj={obj}/>}/>
+          <Route exact path="/debit" element={<Debit/>}/>
+          <Route exact path="/form" element={<Form setObj={setObj}/>}/>
+          <Route exact path="/contact" element={<Contact setObj={setObj}/>}/>
+        
+
+        </Routes>
+
+
+      </Router>
+
+     
+     {/* <Home/> */}
+     
     </div>
   );
 }
