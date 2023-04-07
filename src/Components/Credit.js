@@ -118,7 +118,7 @@ export default function Credit({ getName, obj }) {
   const addCardBtn = () => {
     console.log("pressed");
     setmyscript((prevState) => [...prevState, myUniqueCard]);
-    // setActivename("karan")
+   
   };
   myscriptele = myscript.map((thing) => {
     return (

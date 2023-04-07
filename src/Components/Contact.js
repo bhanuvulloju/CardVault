@@ -34,16 +34,15 @@ export default function Contact() {
 
                 <div className='contact-items'>
                 <div className='contact-items-li-a'>
-                    {/* <h3 style={{marginLeft:'70px',marginBottom:'5px'}}>Chat Support</h3>  */}
+                    
                     <img src={require('../images/boy1.jpg')} alt="" className='img-logo-testimonial'/>
                     <p style={{fontFamily:'cursive'}}> <span style={{fontSize:'larger'}}>💬  </span> 
                         We are satisfied with the project given to us and with the communication flow through the project.
                     </p>
                     <p style={{marginLeft:'32px',fontFamily:'fantasy'}}>- Alok John</p>
-                    {/* <p style={{marginLeft:'80px',marginTop:'10px',fontWeight:'bold',color:'blue'}}>Chat Now &#8594;</p> */}
+                    
                 </div>
                 <div className='contact-items-li-a'>
-                {/* <h3 style={{marginLeft:'70px',marginBottom:'5px'}}>Email Support</h3>  */}
                 <img src={require('../images/girl1.jpg')} alt="" className='img-logo-testimonial'/>
 
                     <p style={{fontFamily:'cursive'}}> 
@@ -51,7 +50,6 @@ export default function Contact() {
                     <span style={{fontSize:'larger'}}> 💬</span> 
                     </p>
                     <p style={{marginLeft:'32px',fontFamily:'fantasy'}}>- Dany Williams</p>
-                    {/* <p style={{marginLeft:'80px',marginTop:'10px',fontWeight:'bold',color:'blue'}}>Send email &#8594;</p> */}
                 </div>
                 <div className='contact-items-li-a'>
                 <img src={require('../images/boy2.jpg')} alt="" className='img-logo-testimonial'/>
@@ -61,7 +59,6 @@ export default function Contact() {
                     and we look forward to continue working in the future.
                     </p>
                     <p style={{marginLeft:'52px',fontFamily:'fantasy'}}>- Jon Snow</p>
-                    {/* <p style={{marginLeft:'60px',marginTop:'10px',fontWeight:'bold',color:'blue'}}>Visit help center &#8594;</p> */}
                 </div>
                
             </div>

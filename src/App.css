@@ -5,40 +5,32 @@ html {
   height: 100%;
 }
 body {
-  height: 100%;
   margin: 0;
   background-repeat: no-repeat;
   background-attachment: fixed;
   background: linear-gradient(#302b63, #24243e);
 }
 
-
-
-
 .navbar{
   width: 100%;
   height:64px;
   background-color: black;
   position: fixed;
-  
+  z-index: 1;
 }
 .nav-list{
   list-style: none;
   display: flex;
   justify-content: left;
-  /* position: relative; */
   text-align: center;
   position: fixed;
   
 }
 .nav-list >li{
-  /* position: relative; */
   margin-top: 15px;
   text-align: center;
 
 }
-
-
 .nav-list >li a{
   text-decoration: none;
   color: white;
@@ -62,7 +54,6 @@ body {
 }
 .text-container{
   width: fit-content;
-  /* border: 1px solid black; */
   padding: 20px;
   position: relative;
 }
@@ -105,10 +96,6 @@ body {
   width: 400px;
   height: 240px;
   border: 1px solid black;
-  /* position: absolute;
-  top: 180px;
-  left: 120px; */
-  /* margin-top: 12px; */
   border-radius: 15px;
   box-shadow: -2px 1px 24px 4px rgb(103 170 207);
   background-color: rgb(10, 54, 96);
@@ -120,10 +107,7 @@ body {
   font-size: x-large;
   color: aliceblue;
 }
-.bank-img{
- 
-  /* background-color: blue; */
-  
+.bank-img{ 
   position: absolute;
   top: 5px;
   right: 113px;
@@ -222,7 +206,6 @@ z-index:1;
   border-radius: 9px;
   cursor: pointer;
 }
-/* style={{position:'absolute',marginTop:'77px',marginLeft:'255px'}} */
 
 .addCard{
   position:absolute;
@@ -269,5 +252,30 @@ z-index:1;
   height: 140px;
   padding: 7px;
   background-color: #332f5b;
+  border-radius: 12px;
+}
+.testimonials-block-a{
+  max-width: 220px;
+  margin: 0 auto;
+  color:rgba(169, 169, 169, 0.505);
+}
+.testimonials-block-b{
+  max-width: 320px;
+  margin: 7px auto;
+}
+
+.contact-items-li-a{
+  margin: 1px;
+  width: 240px;
+  height: 270px;
+  padding: 17px;
+  background-color: #21212e;
+  border-radius: 12px;
+  color: #d1d1e0;
+}
+.img-logo-testimonial{
+  width: 180px;
+  height: 140px;
+  margin-left: 28px;
   border-radius: 12px;
 }
